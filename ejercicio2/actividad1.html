@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios en html 5 - Tecsup</title>
+</head>
+
+<body>
+    <h1>Travel Authorization Form</h1>
+    <form id="form-order">
+        <p>
+        <fieldset>
+            <legend>
+                SeccionA: Informacion del cliente
+            </legend>
+            <p>
+                <label for="name">Cargo</label>
+                <input type="text" name="name" id="name" autofocus autocomplete required>
+            </p>
+            <p>
+                <label for="password">Nombre</label>
+                <input type="text" name="password" id="password" pattern="[a-z]{3}[0-9]{4}" required>
+            </p>
+
+            <p>
+                <label for="telefono">Primer Apellido</label>
+                <input type="text" name="telefono" id="telefono">
+            </p>
+
+            <p>
+                <label for="telefono">Segundo Apellido</label>
+                <input type="text" name="telefono" id="telefono">
+            </p>
+
+            <p>
+                <label for="email">Correo Electronico</label>
+                <input type="text" name="name" id="email">
+            </p>
+
+            <p>
+                <label for="numeroejemplo">Numero demo(obligatorio)</label>
+                <input type="number" name="numeroejemplo" id="numeroejemplo" max="14" min="2" step="2">
+            </p>
+
+        </fieldset>
+        </p>
+
+        <p>
+        <fieldset>
+            <legend>
+                SeccionB: Informacion del viaje
+            </legend>
+
+            <label for="ddlTown">Nombre de la aereolinea</label><br />
+            <select title="Please choose your favorite town" name="ddlTown" id="ddlTown">
+                <option value="">Seleccione una aereolinea </option>
+                <option value="Swindon">Swindon</option>
+                <option value="London">London</option>
+                <option value="Burkino Faso">Burkino Faso</option>
+            </select>
+            <p>
+                <label for="password">Destino</label>
+                <input type="text" name="password" id="password" pattern="[a-z]{3}[0-9]{4}" required>
+            </p>
+
+            <p>
+                <label for="fecha">Fecha de salida</label>
+                <input type="date" name="fecha" id="fecha" min="2018-03-31">
+            </p>
+
+            <p>
+                <label for="fecha">Fecha de regreso</label>
+                <input type="date" name="fecha" id="fecha" min="2018-03-31">
+            </p>
+
+            <p>
+                <label for="email">Coste estimado</label>
+                <input type="text" name="name" id="email">
+            </p>
+
+            <p>
+                <label for="numeroejemplo">Numero demo(obligatorio)</label>
+                <input type="number" name="numeroejemplo" id="numeroejemplo" max="14" min="2" step="2">
+            </p>
+        </fieldset>
+        </p>
+
+        <fieldset>
+            <legend>
+                Costos adicionales estimados
+            </legend>
+
+            <p>
+                <label for="password">Alquiler de coche</label>
+                <input type="text" name="password" id="password" pattern="[a-z]{3}[0-9]{4}" required>
+            </p>
+
+            <p>
+                <label for="email">Hotel</label>
+                <input type="text" name="name" id="email">
+            </p>
+
+            <p>
+                <label for="email">Comidas</label>
+                <input type="text" name="name" id="email">
+            </p>
+
+            <p>
+                <label for="email">Total estimado</label>
+                <input type="text" name="name" id="email">
+            </p>
+        </fieldset>
+        <br>
+        <input class="input" type="checkbox" title="Select what colors you like" name="chk0" id="chk0_0" value="red">
+        <label for="chk0_0">&nbsp;Incluye la visita al cliente?</label><br>
+
+        <br>
+        Metodo d pago utilizado<br />
+        <input class="input" type="radio" title="Choose from one of the options" name="radAge" id="radAge4_0"
+            value="Under30">
+        <label for="radAge4_0">&nbsp;Metalico</label><br>
+        <input class="input" type="radio" title="Choose from one of the options" name="radAge" id="radAge4_1"
+            value="Over30">
+        <label for="radAge4_1">&nbsp;Tarjeta de credito</label><br>
+        <input class="input" type="radio" title="Choose from one of the options" name="radAge" id="radAge4_1"
+            value="Over30">
+        <label for="radAge4_1">&nbsp;Cheque</label><br>
+        <br>
+        <label for="txtLifeStory" width="200px">Proposito del viaje</label><br />
+        <textarea title="Write your life story here" name="txtLifeStory" id="txtLifeStory" rows="5" cols="25" class="input">
+        </textarea>
+        <br>
+        <br>
+        <input type="submit" name="Enviar">
+
+    </form>
+</body>
+
+</html>
